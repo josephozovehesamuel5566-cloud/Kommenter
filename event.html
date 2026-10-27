@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in DOM & DOM Manipulation</title>
+    <link rel="stylesheet" href="event.css">
+    <script defer src="./event.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <h1>Welcome to Our Dynamic Web Page</h1>
+    </header> -->
+
+    <section class="form-section" aria-labelledby="heading">
+        <!-- Text -->
+        <div class="text-wrapper">
+            <h2 class="heading">Create Your Own Comment</h2>
+            <p class="desc">You can quickly use this page to create a sentence. Nothing too serious, we are actually trying to understand how event listeners work as a DOM Manipulation method.</p>
+        </div>
+
+        <!-- Form -->
+        <div class="form-wrapper">
+            <form action="" method="post" id="form">
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type..." required></textarea>
+
+                <p class="words">
+                    <span id="typedWords"></span>/<span id="allowedWords"></span>
+                </p>
+
+                <button id="createBtn" type="submit" >Create +</button>
+
+                <p class="message" id="message">
+
+                </p>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>

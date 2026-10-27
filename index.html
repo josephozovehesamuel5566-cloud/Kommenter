@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class</title>
+    <script defer src="./script.js"></script>
+
+    <style>
+        div.modal-wrapper {
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        div.dom-wrapper {
+            margin-block: 5rem;
+        }
+
+        .my-div {
+            margin: 10px 0;
+            width: 90vw;
+            background-color: black;
+            color: brown;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        Methods of embedding JS 
+            1. Inline JS/Script - attributes
+            2. Internal JS/Script - script tag
+            3. External JS/Script - script tag with the src attribute
+    -->
+    <!-- headline -->
+    <h1 id="heading">
+        Introduction to JavaScript
+    </h1>
+
+    <!-- internal script -->
+    <script>
+        const heading = document.getElementById("heading");
+
+        heading.style.color = "orange";
+
+
+    </script>
+
+
+
+    <!-- tagline -->
+    <p>
+        JavaScript, often abbreviated as JS, is a high-level, dynamic, and interpreted programming language that has become one of the most essential technologies in modern web development. It was created in 1995 by Brendan Eich during his time at Netscape Communications, and astonishingly, it was developed in just about ten days to add interactivity to web pages, complementing HTML and CSS. 
+    </p>
+
+    <!-- CTA -->
+    <!-- inline script -->
+    <button type="button" onclick="window.alert('Hi guys! Welcome to today\'s class.')">Click Me!</button>
+
+    <!-- form -->
+    <form action="" method="post" id="myForm" class="my-form">
+        <!-- full name field -->
+        <div class="field">
+            <label for="fullname"><strong>Full Name:</strong></label>
+            <input type="text" name="fullname" id="fullname" placeholder="E.g., John Doe" required>
+        </div>
+
+        <!-- email field -->
+        <div class="field">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="text" name="email" id="email" placeholder="E.g., johndoe@gmail.com" required>
+        </div>
+
+        <!-- password -->
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="E.g., yuru7834gs@" required>
+        </div>
+
+        <!-- submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+        <p id="message"></p>
+    </form>
+
+    <p id="riddle"></p>
+
+    <!-- DOM & DOM Manipulation -->
+    <div class="dom-wrapper" id="domWrapper">
+        <!-- headline -->
+        <h2>Welcome to DOM & DOM Manipulation</h2>
+
+        <!-- tagline -->
+        <p class="dom-text">In this session, you are going to be learning how you can use JavaScript as a programming language to add interactivity and functionality to your web page.</p>
+
+        <!-- text -->
+        <p class="dom-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis accusamus incidunt cupiditate dolorem ab accusantium eos exercitationem illo doloribus, non rem amet maxime, culpa veniam molestias! Temporibus repudiandae labore sed!</p>
+
+        <p id="special"></p>
+    </div>
+
+</body>
+</html>
